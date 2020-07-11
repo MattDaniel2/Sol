@@ -1,0 +1,11 @@
+prefix=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-install
+exec_prefix=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-install
+libdir=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-install/lib
+includedir=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-install/include
+
+Name: Protocol Buffers
+Description: Google's Data Interchange Format
+Version: 3.12.2.0
+Libs: -L${libdir} -lprotobuf-lite 
+Cflags: -I${includedir} 
+Conflicts: protobuf

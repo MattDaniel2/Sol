@@ -1,0 +1,16 @@
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/libprotobuf-lite.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/protoc.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/libprotoc.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/libprotobuf.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/lite-test.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/gmock_main.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/gmock.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/tests.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/test_plugin.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/lite-arena-test.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/check.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/list_install_components.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/install.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)/CMakeFiles/install/local.dir

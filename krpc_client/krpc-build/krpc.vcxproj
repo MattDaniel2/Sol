@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{33BEC77D-C7AD-3127-9CF6-F67AF6624FBA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>krpc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">krpc.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">krpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">krpc.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">krpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">krpc.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">krpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">krpc.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">krpc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ASIO_STANDALONE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;__USE_W32_SOCKETS;CMAKE_INTDIR="Debug";krpc_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ASIO_STANDALONE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;__USE_W32_SOCKETS;CMAKE_INTDIR=\"Debug\";krpc_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/Debug/exports.def C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\lib\libprotobuf.lib;ws2_32.lib;mswsock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/Debug/krpc.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/Debug/krpc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\asio-asio-1-12-branch\asio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;__USE_W32_SOCKETS;CMAKE_INTDIR="Release";krpc_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;__USE_W32_SOCKETS;CMAKE_INTDIR=\"Release\";krpc_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/Release/exports.def C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\lib\libprotobuf.lib;ws2_32.lib;mswsock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/Release/krpc.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/Release/krpc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;__USE_W32_SOCKETS;CMAKE_INTDIR="MinSizeRel";krpc_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;__USE_W32_SOCKETS;CMAKE_INTDIR=\"MinSizeRel\";krpc_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/exports.def C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\lib\libprotobuf.lib;ws2_32.lib;mswsock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/MinSizeRel/krpc.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/MinSizeRel/krpc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;__USE_W32_SOCKETS;CMAKE_INTDIR="RelWithDebInfo";krpc_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ASIO_STANDALONE;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;__USE_W32_SOCKETS;CMAKE_INTDIR=\"RelWithDebInfo\";krpc_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\include\krpc;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/RelWithDebInfo/exports.def C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\lib\libprotobuf.lib;ws2_32.lib;mswsock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/RelWithDebInfo/krpc.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/RelWithDebInfo/krpc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\b3ea255fd34817439231f730ac4eed79\krpc.pb.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running cpp protocol buffer compiler on protobuf/krpc.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\bin\protoc.exe --cpp_out C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build -I C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf/krpc.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\protobuf\krpc.proto;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.h;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running cpp protocol buffer compiler on protobuf/krpc.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\bin\protoc.exe --cpp_out C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build -I C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf/krpc.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\protobuf\krpc.proto;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.h;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running cpp protocol buffer compiler on protobuf/krpc.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\bin\protoc.exe --cpp_out C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build -I C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf/krpc.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\protobuf\krpc.proto;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.h;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running cpp protocol buffer compiler on protobuf/krpc.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\bin\protoc.exe --cpp_out C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build -I C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf/krpc.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\protobuf\krpc.proto;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.h;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\98fec1dd1b336c6e5f3490b8626f023a\krpc.pb.hpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.h to C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/include/krpc/krpc.pb.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.h C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/include/krpc/krpc.pb.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc\krpc.pb.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.h to C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/include/krpc/krpc.pb.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.h C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/include/krpc/krpc.pb.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc\krpc.pb.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.h to C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/include/krpc/krpc.pb.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.h C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/include/krpc/krpc.pb.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc\krpc.pb.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.h to C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/include/krpc/krpc.pb.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.h C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/include/krpc/krpc.pb.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc\krpc.pb.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\062ca9c5c227a202c44aebcae7643257\krpc.pb.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.cc to C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/src/krpc.pb.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dinput=C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.cc -Doutput=C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/src/krpc.pb.cpp -P C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf-include.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\src\krpc.pb.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.cc to C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/src/krpc.pb.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dinput=C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.cc -Doutput=C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/src/krpc.pb.cpp -P C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf-include.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\src\krpc.pb.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.cc to C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/src/krpc.pb.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dinput=C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.cc -Doutput=C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/src/krpc.pb.cpp -P C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf-include.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\src\krpc.pb.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.cc to C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/src/krpc.pb.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dinput=C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.pb.cc -Doutput=C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/protobuf/src/krpc.pb.cpp -P C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/protobuf-include.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\krpc.pb.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\src\krpc.pb.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8 -BC:/Users/mdani/source/repos/Sol/krpc_client/krpc-build --check-stamp-file C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindProtobuf.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8 -BC:/Users/mdani/source/repos/Sol/krpc_client/krpc-build --check-stamp-file C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindProtobuf.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8 -BC:/Users/mdani/source/repos/Sol/krpc_client/krpc-build --check-stamp-file C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindProtobuf.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mdani/source/repos/Sol/krpc_client/krpc-cpp-0.4.8 -BC:/Users/mdani/source/repos/Sol/krpc_client/krpc-build --check-stamp-file C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindProtobuf.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\src\client.cpp" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\src\connection.cpp" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\src\decoder.cpp" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\src\encoder.cpp" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\src\event.cpp" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\src\krpc.cpp" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\src\platform.cpp" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\src\stream_impl.cpp" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-cpp-0.4.8\src\stream_manager.cpp" />
+    <ClInclude Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\include\krpc\krpc.pb.hpp" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\protobuf\src\krpc.pb.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\mdani\source\repos\Sol\krpc_client\krpc-build\ZERO_CHECK.vcxproj">
+      <Project>{2602F1F4-E2C4-36AF-A4B6-4999799E4EFC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

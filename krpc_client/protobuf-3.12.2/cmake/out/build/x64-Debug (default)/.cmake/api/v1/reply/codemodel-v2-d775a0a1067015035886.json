@@ -1,0 +1,150 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.3"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "protobuf",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "check::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-check-Debug-024b82fa8c0850837e9a.json",
+					"name" : "check",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gmock::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gmock-Debug-43d055db72558469fead.json",
+					"name" : "gmock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gmock_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gmock_main-Debug-44d8134dd002382ae0be.json",
+					"name" : "gmock_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libprotobuf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libprotobuf-Debug-2652155de6587bbdf48c.json",
+					"name" : "libprotobuf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libprotobuf-lite::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libprotobuf-lite-Debug-4857cb5bc6444be2d328.json",
+					"name" : "libprotobuf-lite",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libprotoc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libprotoc-Debug-d81a0270db640a13cb7a.json",
+					"name" : "libprotoc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lite-arena-test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lite-arena-test-Debug-c8f3e06d6cc0a3713866.json",
+					"name" : "lite-arena-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lite-test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lite-test-Debug-40799400e70a2ea7cffc.json",
+					"name" : "lite-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "protoc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-protoc-Debug-980261e15c767b4126b0.json",
+					"name" : "protoc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_plugin-Debug-f0739ecaba4c9ced27f1.json",
+					"name" : "test_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tests-Debug-f5be9b449373b531692d.json",
+					"name" : "tests",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/out/build/x64-Debug (default)",
+		"source" : "C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

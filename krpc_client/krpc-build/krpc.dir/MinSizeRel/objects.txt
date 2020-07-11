@@ -1,0 +1,10 @@
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/client.obj
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/connection.obj
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/decoder.obj
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/encoder.obj
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/event.obj
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/krpc.obj
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/platform.obj
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/stream_impl.obj
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/stream_manager.obj
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/krpc.dir/MinSizeRel/krpc.pb.obj

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\ef9b2cc8cc263aa795c9df3c1143cd9c\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7343899B-B81E-320C-B0A7-3CF57697D1C5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

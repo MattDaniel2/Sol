@@ -1,0 +1,14 @@
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/libprotobuf-lite.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/protoc.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/libprotoc.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/libprotobuf.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/gmock_main.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/gmock.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/tests.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/test_plugin.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/lite-test.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/lite-arena-test.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/check.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/INSTALL.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/ZERO_CHECK.dir

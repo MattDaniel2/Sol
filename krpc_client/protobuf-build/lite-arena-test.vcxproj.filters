@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\lite_arena_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\arena_test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\test_util_lite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_unittest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_public_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_no_arena_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\edf7a361875f7a3fcbb60a7b01c1cf67\map_lite_unittest.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\edf7a361875f7a3fcbb60a7b01c1cf67\unittest_import_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\edf7a361875f7a3fcbb60a7b01c1cf67\unittest_import_public_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\edf7a361875f7a3fcbb60a7b01c1cf67\unittest_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\edf7a361875f7a3fcbb60a7b01c1cf67\unittest_no_arena_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7343899B-B81E-320C-B0A7-3CF57697D1C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{37D7F3E1-96B9-3C99-A2C2-E8F3E8150603}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{529094E2-86A5-3405-AB40-27670899BF6D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>lite-arena-test</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lite-arena-test.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lite-arena-test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lite-arena-test.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lite-arena-test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">lite-arena-test.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">lite-arena-test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">lite-arena-test.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">lite-arena-test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4065;4146;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH="C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/Debug/test_plugin.exe";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH=\"C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/Debug/test_plugin.exe\";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\libprotobuf-lited.lib;Debug\gmock_main.lib;Debug\gmock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/Debug/lite-arena-test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/Debug/lite-arena-test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4065;4146;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH="C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/Release/test_plugin.exe";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH=\"C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/Release/test_plugin.exe\";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\libprotobuf-lite.lib;Release\gmock_main.lib;Release\gmock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/Release/lite-arena-test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/Release/lite-arena-test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4065;4146;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH="C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/MinSizeRel/test_plugin.exe";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH=\"C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/MinSizeRel/test_plugin.exe\";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\libprotobuf-lite.lib;MinSizeRel\gmock_main.lib;MinSizeRel\gmock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/MinSizeRel/lite-arena-test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/MinSizeRel/lite-arena-test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4065;4146;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH="C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/RelWithDebInfo/test_plugin.exe";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH=\"C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/RelWithDebInfo/test_plugin.exe\";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googletest\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\third_party\googletest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\libprotobuf-lite.lib;RelWithDebInfo\gmock_main.lib;RelWithDebInfo\gmock.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/RelWithDebInfo/lite-arena-test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/RelWithDebInfo/lite-arena-test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\edf7a361875f7a3fcbb60a7b01c1cf67\map_lite_unittest.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/map_lite_unittest.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+Debug\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/map_lite_unittest.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Debug\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_unittest.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_unittest.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/map_lite_unittest.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+Release\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/map_lite_unittest.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Release\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_unittest.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_unittest.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/map_lite_unittest.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+MinSizeRel\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/map_lite_unittest.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\MinSizeRel\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_unittest.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_unittest.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/map_lite_unittest.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+RelWithDebInfo\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/map_lite_unittest.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\RelWithDebInfo\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_unittest.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_unittest.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\edf7a361875f7a3fcbb60a7b01c1cf67\unittest_import_lite.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+Debug\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Debug\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+Release\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Release\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+MinSizeRel\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\MinSizeRel\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+RelWithDebInfo\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\RelWithDebInfo\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\edf7a361875f7a3fcbb60a7b01c1cf67\unittest_import_public_lite.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_public_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+Debug\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_public_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Debug\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_public_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_public_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_public_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+Release\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_public_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Release\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_public_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_public_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_public_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+MinSizeRel\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_public_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\MinSizeRel\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_public_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_public_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_public_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+RelWithDebInfo\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_import_public_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\RelWithDebInfo\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_public_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_public_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\edf7a361875f7a3fcbb60a7b01c1cf67\unittest_lite.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+Debug\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Debug\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+Release\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Release\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+MinSizeRel\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\MinSizeRel\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+RelWithDebInfo\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\RelWithDebInfo\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\edf7a361875f7a3fcbb60a7b01c1cf67\unittest_no_arena_lite.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_no_arena_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+Debug\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_no_arena_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Debug\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_no_arena_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_no_arena_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_no_arena_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+Release\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_no_arena_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\Release\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_no_arena_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_no_arena_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_no_arena_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+MinSizeRel\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_no_arena_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\MinSizeRel\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_no_arena_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_no_arena_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_no_arena_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+RelWithDebInfo\protoc.exe C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src/google/protobuf/unittest_no_arena_lite.proto --proto_path=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --cpp_out=C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/src --experimental_allow_proto3_optional
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\RelWithDebInfo\protoc.exe;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_no_arena_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_no_arena_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake -BC:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build --check-stamp-file C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\extract_includes.bat.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\install.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotobuf-lite.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotobuf.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotoc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-config-version.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-config.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-lite.pc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-module.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-options.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf.pc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protoc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\tests.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\version.rc.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake -BC:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build --check-stamp-file C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\extract_includes.bat.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\install.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotobuf-lite.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotobuf.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotoc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-config-version.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-config.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-lite.pc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-module.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-options.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf.pc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protoc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\tests.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\version.rc.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake -BC:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build --check-stamp-file C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\extract_includes.bat.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\install.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotobuf-lite.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotobuf.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotoc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-config-version.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-config.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-lite.pc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-module.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-options.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf.pc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protoc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\tests.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\version.rc.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mdani/source/repos/Sol/krpc_client/protobuf-3.12.2/cmake -BC:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build --check-stamp-file C:/Users/mdani/source/repos/Sol/krpc_client/protobuf-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\extract_includes.bat.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\install.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotobuf-lite.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotobuf.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\libprotoc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-config-version.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-config.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-lite.pc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-module.cmake.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf-options.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protobuf.pc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\protoc.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\tests.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\cmake\version.rc.in;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\lite_arena_unittest.cc" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\arena_test_util.cc" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_test_util.cc" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\test_util_lite.cc" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\map_lite_unittest.pb.cc" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_lite.pb.cc" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_import_public_lite.pb.cc" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_lite.pb.cc" />
+    <ClCompile Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-3.12.2\src\google\protobuf\unittest_no_arena_lite.pb.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\ZERO_CHECK.vcxproj">
+      <Project>{7D204B0E-B117-3979-8109-16212490DCC6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\gmock.vcxproj">
+      <Project>{2665A03A-C653-34CC-A966-55273A452D31}</Project>
+      <Name>gmock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\gmock_main.vcxproj">
+      <Project>{2885D34E-E7A7-353B-8667-F78875BCA01B}</Project>
+      <Name>gmock_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\libprotobuf-lite.vcxproj">
+      <Project>{87EB11B8-49F5-3FB4-8F50-00353C117046}</Project>
+      <Name>libprotobuf-lite</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-build\protoc.vcxproj">
+      <Project>{9F7E7B43-345C-3D36-A08A-83D977C0B39A}</Project>
+      <Name>protoc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,4 @@
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/CMakeFiles/krpc.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/CMakeFiles/INSTALL.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/mdani/source/repos/Sol/krpc_client/krpc-build/CMakeFiles/ZERO_CHECK.dir
