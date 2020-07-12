@@ -143,19 +143,19 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 4,
-			"id" : "gmock::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 4,
-			"id" : "libprotobuf-lite::@6890427a1f51a3e7e1df"
+			"id" : "protoc::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 4,
 			"id" : "gmock_main::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "protoc::@6890427a1f51a3e7e1df"
+			"backtrace" : 4,
+			"id" : "gmock::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "libprotobuf-lite::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "lite-test::@6890427a1f51a3e7e1df",

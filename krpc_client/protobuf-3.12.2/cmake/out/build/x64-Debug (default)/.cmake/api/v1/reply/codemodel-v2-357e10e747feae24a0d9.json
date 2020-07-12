@@ -101,35 +101,35 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lite-arena-test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lite-arena-test-Debug-c8f3e06d6cc0a3713866.json",
+					"jsonFile" : "target-lite-arena-test-Debug-56c5643e454bf51fb30f.json",
 					"name" : "lite-arena-test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lite-test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lite-test-Debug-40799400e70a2ea7cffc.json",
+					"jsonFile" : "target-lite-test-Debug-2076fbe0837b6edc142e.json",
 					"name" : "lite-test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "protoc::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-protoc-Debug-980261e15c767b4126b0.json",
+					"jsonFile" : "target-protoc-Debug-1ebb330cd0fb121ac4f4.json",
 					"name" : "protoc",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_plugin::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_plugin-Debug-f0739ecaba4c9ced27f1.json",
+					"jsonFile" : "target-test_plugin-Debug-3086290f39d98f8e2511.json",
 					"name" : "test_plugin",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "tests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tests-Debug-f5be9b449373b531692d.json",
+					"jsonFile" : "target-tests-Debug-33ac8c99483689951700.json",
 					"name" : "tests",
 					"projectIndex" : 0
 				}

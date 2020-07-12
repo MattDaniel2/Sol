@@ -259,12 +259,15 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 4,
-			"id" : "libprotobuf::@6890427a1f51a3e7e1df"
+			"id" : "protoc::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 4,
-			"id" : "gmock::@6890427a1f51a3e7e1df"
+			"id" : "libprotoc::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "libprotobuf::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 4,
@@ -272,10 +275,7 @@
 		},
 		{
 			"backtrace" : 4,
-			"id" : "libprotoc::@6890427a1f51a3e7e1df"
-		},
-		{
-			"id" : "protoc::@6890427a1f51a3e7e1df"
+			"id" : "gmock::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "tests::@6890427a1f51a3e7e1df",
