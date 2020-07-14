@@ -14,9 +14,16 @@ private:
 
 public:
 	void init(krpc::Client& conn, krpc::services::SpaceCenter& space_center);
+
 	void setFrames();
 	void setupStreams();
+	void updateThrottle_Q(float throttle_step);
+	void updatePitchHeading(float pitch, float heading);
+
 	bool engineFuelCheck();
+
+	float getDynPressure();
+	double getMeanAltitude();
 	krpc::services::SpaceCenter::Vessel getVesselTick();
 	krpc::services::SpaceCenter::ReferenceFrame getOrbitalFrame();
 	krpc::services::SpaceCenter::ReferenceFrame getSurfaceFrame();
@@ -36,6 +43,7 @@ public:
 	void set_sys(ProtoSystem& sys);
 	void update_telem();
 	void update_engine();
+
 
 private:
 	ProtoSystem* proto_sys;
@@ -66,6 +74,22 @@ krpc::services::SpaceCenter::ReferenceFrame ProtoSystem::getOrbitalFrame() {
 }
 krpc::services::SpaceCenter::ReferenceFrame ProtoSystem::getSurfaceFrame() {
 	return this->srf_frame;
+}
+
+float ProtoSystem::getDynPressure() {
+	return this->srf_flight_stream().dynamic_pressure();
+}
+
+double ProtoSystem::getMeanAltitude() {
+	return this->srf_flight_stream().mean_altitude();
+}
+
+void ProtoSystem::updateThrottle_Q(float throttle_step) {
+	this->getVesselTick().control().set_throttle(throttle_step);
+};
+
+void ProtoSystem::updatePitchHeading(float pitch, float heading) {
+	this->getVesselTick().auto_pilot().target_pitch_and_heading(pitch, heading);
 }
 
 bool ProtoSystem::engineFuelCheck() {
