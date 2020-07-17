@@ -25,6 +25,7 @@ void systems_check(krpc::Client& conn, ProtoSystem& proto_sys) {
 	std::this_thread::sleep_for(std::chrono::milliseconds(500));
 	ves.control().set_throttle(0);
 	std::this_thread::sleep_for(std::chrono::milliseconds(500));
+	ves.control().set_rcs(false);
 	std::cout << "Exiting Systems Check" << std::endl;
 }
 

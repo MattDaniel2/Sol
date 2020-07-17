@@ -25,6 +25,8 @@ public:
 	float getDynPressure();
 	double getMeanAltitude();
 	krpc::services::SpaceCenter::Vessel getVesselTick();
+	krpc::services::SpaceCenter::Flight getFlightTick_Srf();
+	krpc::services::SpaceCenter::Flight getFlightTick_Orb();
 	krpc::services::SpaceCenter::ReferenceFrame getOrbitalFrame();
 	krpc::services::SpaceCenter::ReferenceFrame getSurfaceFrame();
 };
@@ -76,6 +78,14 @@ krpc::services::SpaceCenter::ReferenceFrame ProtoSystem::getSurfaceFrame() {
 	return this->srf_frame;
 }
 
+krpc::services::SpaceCenter::Flight ProtoSystem::getFlightTick_Srf() {
+	return this->srf_flight_stream();
+}
+
+krpc::services::SpaceCenter::Flight ProtoSystem::getFlightTick_Orb() {
+	return this->obt_flight_stream();
+}
+
 float ProtoSystem::getDynPressure() {
 	return this->srf_flight_stream().dynamic_pressure();
 }
@@ -95,6 +105,11 @@ void ProtoSystem::updatePitchHeading(float pitch, float heading) {
 bool ProtoSystem::engineFuelCheck() {
 	return this->getVesselTick().parts().engines().front().has_fuel();
 }
+
+
+
+
+
 
 void ProtoHUD::set_sys(ProtoSystem& sys) {
 	this->proto_sys = &sys;

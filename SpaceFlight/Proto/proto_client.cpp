@@ -28,7 +28,7 @@ int main() {
 	liftoff_sequence(proto_sys, proto_hud);
 	std::vector<float> Q_vec;
 	
-	while (true) {
+	while (proto_sys.getMeanAltitude() < 60000) {
 		guidance_tick(proto_sys);
 		if (!proto_sys.engineFuelCheck()) {
 			std::cout << "Flameout!" << std::endl;
@@ -38,14 +38,28 @@ int main() {
 		proto_hud.update_telem();
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	};
-
-	deploy_fairings(proto_sys, proto_hud);
+	proto_sys.getVesselTick().control().set_rcs(true);
+	proto_sys.updateThrottle_Q(0);
+	proto_sys.updatePitchHeading(0.0, 90.0);
+	std::this_thread::sleep_for(std::chrono::seconds(1));
+	deploy_fairings(proto_sys);
+	std::this_thread::sleep_for(std::chrono::seconds(3));
+	stage(proto_sys);
 
 	auto it = std::max_element(std::begin(Q_vec), std::end(Q_vec));
 	std::cout << "MaxQ: " << *it << std::endl;
 
+	//point towards retrograde
+	auto retro_dir = proto_sys.getFlightTick_Orb().retrograde();
+	proto_sys.getVesselTick().auto_pilot().set_target_direction(retro_dir);
+	for (auto chute : proto_sys.getVesselTick().parts().parachutes()) {
+		std::cout << chute.part().title() << std::endl;
+		chute.arm();
+	}
+	
 	while (true) {
-		//just so that program doesn't shut off and let Proto go wild
+		auto retro_dir = proto_sys.getFlightTick_Orb().retrograde();
+		proto_sys.getVesselTick().auto_pilot().set_target_direction(retro_dir);
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}
 }

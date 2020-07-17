@@ -1,5 +1,5 @@
 #pragma once
-const double TURN_START_ALT = 5000;
+const double TURN_START_ALT = 1000;
 const double TURN_END_ALT = 60000;
 
 void liftoff_sequence(ProtoSystem& proto_sys, ProtoHUD& proto_hud) {
@@ -23,29 +23,41 @@ void liftoff_sequence(ProtoSystem& proto_sys, ProtoHUD& proto_hud) {
 
 void guidance_tick(ProtoSystem& proto_sys) {
 	double alt = proto_sys.getMeanAltitude();
-	double angle_step = (alt - TURN_START_ALT) / (TURN_END_ALT - TURN_START_ALT);
+	double angle_step = 0.75 * (alt - TURN_START_ALT) / (TURN_END_ALT - TURN_START_ALT);
 	angle_step *= 90.0;
 	float curQ = proto_sys.getDynPressure();
 	if (alt > TURN_START_ALT) {
 		proto_sys.updatePitchHeading(90.0 - angle_step, 90.0);
 		proto_sys.updateThrottle_Q(1);
 	}
-	if (curQ / 56000 > 1) {
-		double throt_step = 0.5 - (curQ / 56000) / 5;
+	
+	if (curQ / 44000 > 1) {
+		double throt_step = 0.5 - (curQ / 44000) / 5;
+		throt_step = std::max(throt_step, 0.5);
+		throt_step = std::min(throt_step, 1.0);
 		proto_sys.updateThrottle_Q(throt_step);
 	}
-	else if (curQ / 56000 < 0.8) {
+	else if (curQ / 44000 < 0.8) {
 		proto_sys.updateThrottle_Q(1);
 	}
 	else {
-		double throt_step = ((1 - curQ) / 56000) + 0.8;
+		double throt_step = ((1 - curQ) / 44000) + 0.8;
+		throt_step = std::max(throt_step, 0.5);
+		throt_step = std::min(throt_step, 1.0);
 		proto_sys.updateThrottle_Q(throt_step);
 	}
 	
+	
 }
 
-void deploy_fairings(ProtoSystem& proto_sys, ProtoHUD& proto_hud) {
+void stage(ProtoSystem& proto_sys) {
+	proto_sys.getVesselTick().control().activate_next_stage();
+}
+
+void deploy_fairings(ProtoSystem& proto_sys) {
 	for (auto fairing : proto_sys.getVesselTick().parts().fairings()) {
-		fairing.jettison();
+		std::cout << fairing.part().title() << std::endl;
+		//fairing.jettison();
 	}
+	proto_sys.getVesselTick().control().activate_next_stage();
 }
