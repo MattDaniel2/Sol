@@ -1,5 +1,5 @@
 #pragma once
-#include "proto.h"
+#include "proto.hpp"
 #include <krpc.hpp>
 #include <krpc/services/krpc.hpp>
 #include <krpc/services/space_center.hpp>
