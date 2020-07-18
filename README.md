@@ -5,7 +5,9 @@ A data-driven approach to a space agency in Kerbal Space Program using C++ guida
 https://www.youtube.com/watch?v=XE8GB1vOLyI
 
 ## Explorer Program
-The Explorer Program encompasses my prototyping efforts across vehicle GN&C, science experiments, and data-driven planning. This branch will work across the three projects to explore basic ways to
+The Explorer Program encompasses my prototyping efforts across vehicle GN&C, science-experiments, and data-driven planning. This branch will work across the three projects to explore basic ways to
+  - Launch vehicles on sub-orbital trajectories in excess of 200km Apogee, 3000km downrange distance
+  - Recover unmanned probes or upper stages
   - Test components from the launch site
   - Activate, record, and transmit or recover scientific experiments
   - Log vehicle lifetime telemetry and perform rudimentary analysis on it
