@@ -1,6 +1,6 @@
 # Proto family space-flight control for Explorer Program
 
-## Ascent Profile
+## Guidance Scheme
 For Proto 1 a quasi-linear pitch vs altitude "step" program was used for quick prototyping and ascent past the Karman Line. This was very inefficient.
 Proto 2 will use a "pure" gravity-turn guidance control scheme to optimize our trajectory. 
 
