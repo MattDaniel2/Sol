@@ -1,5 +1,13 @@
 # Proto family space-flight control for Explorer Program
 
+## Vehicle Stages
+The Proto Vehicle is segmented into stages such that the guidance scheme can initialize the rocket into the class structure required.
+  - Stage 5 Fairings that cannot be activated through normal RPCs
+  - Stage 4 Booster Parts
+  - Stage 3 Interstage Parts
+  - Stage 2 Kicker Parts
+  - Stage 1 Payload Parts
+
 ## Guidance Scheme
 For Proto 1 a quasi-linear pitch vs altitude "step" program was used for quick prototyping and ascent past the Karman Line. This was very inefficient.
 Proto 2 will use a "pure" gravity-turn guidance control scheme to optimize our trajectory. 
