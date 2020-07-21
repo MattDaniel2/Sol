@@ -23,16 +23,22 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="proto_init.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="proto_ui.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="proto_ascent.h">
+    <ClInclude Include="flight.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="proto.h">
+    <ClInclude Include="proto.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proto_ascent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proto_init.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stage.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

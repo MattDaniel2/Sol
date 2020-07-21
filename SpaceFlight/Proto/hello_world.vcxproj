@@ -150,10 +150,12 @@
     <ClCompile Include="krpc.pb.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="proto.h" />
-    <ClInclude Include="proto_ascent.h" />
-    <ClInclude Include="proto_init.h" />
+    <ClInclude Include="flight.hpp" />
+    <ClInclude Include="proto.hpp" />
+    <ClInclude Include="proto_ascent.hpp" />
+    <ClInclude Include="proto_init.hpp" />
     <ClInclude Include="proto_ui.h" />
+    <ClInclude Include="stage.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

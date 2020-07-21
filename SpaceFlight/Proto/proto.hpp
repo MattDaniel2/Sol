@@ -14,8 +14,11 @@ private:
 
 public:
 	Stage Booster;
+	Stage Interstage;
 	Stage Kicker;
-	krpc::services::SpaceCenter::Vessel::AutoPilot autoPilot;
+	Stage Payload;
+	bool fairings_deployed;
+	krpc::services::SpaceCenter::AutoPilot autoPilot;
 	void init(krpc::Client& conn, krpc::services::SpaceCenter& space_center);
 
 	void setFrames();
@@ -23,7 +26,6 @@ public:
 	void updateThrottle_Q(float throttle_step);
 	void updatePitchHeading(float pitch, float heading);
 
-	bool fuelCheck();
 	float getDynPressure();
 	double getMeanAltitude();
 	krpc::services::SpaceCenter::Vessel getVesselTick();
@@ -39,6 +41,62 @@ void ProtoSystem::init(krpc::Client& conn, krpc::services::SpaceCenter& space_ce
 	this->autoPilot = this->vessel_stream().auto_pilot();
 	this->setFrames();
 	this->setupStreams();
+	for (auto eng : this->vessel_stream().parts().engines()) {
+		if (eng.part().stage() == 4) {
+			this->Booster.addEngine(eng);
+		}
+		else if (eng.part().stage() == 3) {
+			this->Interstage.addEngine(eng);
+		}
+		else if (eng.part().stage() == 2) {
+			this->Kicker.addEngine(eng);
+		}
+		else if (eng.part().stage() == 1) {
+			this->Payload.addEngine(eng);
+		}
+	}
+	for (auto rcs : this->vessel_stream().parts().rcs()) {
+		if (rcs.part().stage() == 4) {
+			this->Booster.addRCS(rcs);
+		}
+		else if (rcs.part().stage() == 3) {
+			this->Interstage.addRCS(rcs);
+		}
+		else if (rcs.part().stage() == 2) {
+			this->Kicker.addRCS(rcs);
+		}
+		else if (rcs.part().stage() == 1) {
+			this->Payload.addRCS(rcs);
+		}
+	}
+	for (auto dec : this->vessel_stream().parts().decouplers()) {
+		if (dec.part().stage() == 4) {
+			this->Booster.addDecoupler(dec);
+		}
+		else if (dec.part().stage() == 3) {
+			this->Interstage.addDecoupler(dec);
+		}
+		else if (dec.part().stage() == 2) {
+			this->Kicker.addDecoupler(dec);
+		}
+		else if (dec.part().stage() == 1) {
+			this->Payload.addDecoupler(dec);
+		}
+	}
+	for (auto chute : this->vessel_stream().parts().parachutes()) {
+		if (chute.part().stage() == 4) {
+			this->Booster.addParachute(chute);
+		}
+		else if (chute.part().stage() == 3) {
+			this->Interstage.addParachute(chute);
+		}
+		else if (chute.part().stage() == 2) {
+			this->Kicker.addParachute(chute);
+		}
+		else if (chute.part().stage() == 1) {
+			this->Payload.addParachute(chute);
+		}
+	}
 	std::cout << "Finished System Initialization" << std::endl;
 }
 
@@ -85,18 +143,4 @@ void ProtoSystem::updateThrottle_Q(float throttle_step) {
 
 void ProtoSystem::updatePitchHeading(float pitch, float heading) {
 	this->getVesselTick().auto_pilot().target_pitch_and_heading(pitch, heading);
-}
-
-bool ProtoSystem::stageCheck() {
-	krpc::services::SpaceCenter::Vessel ves = this->getVesselTick();
-	//Fuel Check
-	float lf = ves.resources_in_decouple_stage(ves.control.current_stage - 1, false).amount("Ethanol");
-	float ox = ves.resources_in_decouple_stage(ves.control.current_stage - 1, false).amount("LOX");
-	bool fuel_check = true;
-	if (lf < 200.0 || ox < 200.0) {
-		fuel_check = false;
-	}
-	//Engine Check
-	bool engine_check = true;
-	return fuel_check && engine_check;
 }
