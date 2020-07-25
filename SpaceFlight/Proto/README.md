@@ -1,5 +1,8 @@
 # Proto family space-flight control for Explorer Program
 
+## Capabilities
+Proto 4 was capable of sending a 187kg payload 1,200km downrange with an apoapsis ~ 311km
+
 ## Vehicle Stages
 The Proto Vehicle is segmented into stages such that the guidance scheme can initialize the rocket into the class structure required.
   - Stage 5 Fairings that cannot be activated through normal RPCs
