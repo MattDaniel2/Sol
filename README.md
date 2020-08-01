@@ -16,13 +16,17 @@ There will be a `Proto` launch-vehicle family designed and constructed for the E
 
 ## FastBall Program
 The FastBall program will be my first real go at getting into orbit and launching artificial satellites. It will build off of the knowledge and libraries built in the Explorer Program for launch, telemetry, and analysis. Some high level requirements of a launch-vehicle for the FastBall program
-  * 500kg to LEO with parameters
-    * Apoapsis
-    * Peripasis
+  * 500kg to LEO with run-time parametrized
+    * Apogee
+    * Perigee
     * Inclination
+    * Longitude of Ascending Node
     * Payload varying up to 1.75m diameter and 4.0m length
       * Allows us to tool fairing to a max size, possibly also one smaller fairing variant
-  * Up to 500km circular Prograde Orbit (edge of Thermosphere)
-  * Estimated 10-11km/s delta-v required
+  * Estimated 10km/s delta-v required
   * Estimated 30-ton launch vehicle
   * Targeted 33% margin per launch after tooling on regular contracts
+  
+ ### Launch Vehicles
+ * Curveball -- branches off of proven technologies in the Explorer program, using RD-100 variant booster at 2.0m in diameter, with AJ10 powered upper stage and HTP RCS. May contain 3rd "kicker" stage for orbital insertion
+ * Kickball -- uses a kerolox booster at 2.0m in diameter, with AJ10 powered upper stage
