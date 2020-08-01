@@ -20,9 +20,11 @@ public:
     void addDecoupler(krpc::services::SpaceCenter::Decoupler);
     void addParachute(krpc::services::SpaceCenter::Parachute);
     void activateRCS();
+    void deactivateRCS();
     void activateEngines();
+    void shutdownEngines();
     void armParachutes();
-    bool engineFuelCheck();
+    int engineFuelCheck();
 
     //For interstages
     void separate();
@@ -50,9 +52,21 @@ void Stage::activateRCS() {
     }
 }
 
+void Stage::deactivateRCS() {
+    for (auto rcs_thruster : this->rcs) {
+        rcs_thruster.set_enabled(false);
+    }
+}
+
 void Stage::activateEngines() {
     for (auto eng : this->engines) {
         eng.set_active(true);
+    }
+}
+
+void Stage::shutdownEngines() {
+    for (auto eng : this->engines) {
+        eng.set_active(false);
     }
 }
 
@@ -62,15 +76,18 @@ void Stage::armParachutes() {
     }
 }
 
-bool Stage::engineFuelCheck() {
+int Stage::engineFuelCheck() {
     for (auto eng : this->engines) {
         for (auto engFuel : eng.propellants()) {
-            if ((engFuel.total_resource_available() / engFuel.total_resource_capacity() < 0.05)) {
-                return false;
+            if ((engFuel.total_resource_available() / engFuel.total_resource_capacity() < 0.005)) {
+                return 2;
+            }
+            else if ((engFuel.total_resource_available() / engFuel.total_resource_capacity() < 0.05)) {
+                return 1;
             }
         }
     }
-    return true;
+    return 0;
 }
 
 void Stage::separate() {

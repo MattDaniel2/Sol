@@ -14,26 +14,34 @@ int main() {
 	krpc::services::KRPC krpc(&conn);
 	ProtoSystem proto_sys;
 	typedef krpc::services::KRPC::Expression Expr;
-	
+	char flight_mode{};
+	double TURN_END_ALT{ 80000 };
+	double SCALE_FACTOR{ 0.7 };
+	std::cout << "Enter Mode : T (Static Fire), S (High Altitude Sounding) or N (Normal Ascent)" << std::endl;
+	std::cin >> flight_mode;
 	std::this_thread::sleep_for(std::chrono::seconds(5));
 
 	proto_sys.init(conn, space_center);
-	//kicker_control_tb(proto_sys, conn);
-	//systems_check(proto_sys);
-	//static_fire(proto_sys);
+	systems_check(proto_sys);
+	if (flight_mode == 'T') {
+		static_fire(proto_sys);
+		return 0;
+	}
+	else if (flight_mode == 'S') {
+		//TURN_END_ALT = 65000;
+		SCALE_FACTOR = 0.1;
+	}
 	
 	liftoff_sequence(proto_sys);
-	bool cutoff = ascent(proto_sys);
+	bool cutoff = ascent(proto_sys, TURN_END_ALT, SCALE_FACTOR);
 	MECO(proto_sys);
 	deploy_fairings(proto_sys);
-
-	stage_separation(proto_sys);
-
-	SES(proto_sys);
-	kick(proto_sys);
-	SECO(proto_sys);
-	std::this_thread::sleep_for(std::chrono::seconds(10));
-
-	//prepare_reentry(proto_sys);
-	
+	std::this_thread::sleep_for(std::chrono::seconds(3));
+	if (flight_mode != 'S') {
+		stage_separation(proto_sys);
+		SES(proto_sys);
+		kick(proto_sys);
+		SECO(proto_sys);
+		deploy_payload(proto_sys);
+	}
 }
