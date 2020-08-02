@@ -80,6 +80,7 @@
         "*.tcc": "cpp",
         "hash_map": "cpp",
         "hash_set": "cpp",
-        "hashtable": "cpp"
+        "hashtable": "cpp",
+        "*.ipp": "cpp"
     }
 }
