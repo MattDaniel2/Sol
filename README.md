@@ -4,6 +4,12 @@ A data-driven approach to a space agency in Kerbal Space Program using C++ guida
 ## Very Useful Resource on C++ Windows Setup
 https://www.youtube.com/watch?v=XE8GB1vOLyI
 
+## Music Program
+The Music Program is a Sounding Rocket program focused on prototyping rocketry and science collection efforts, as well as efficient manufacturing for high margin, high volume, high frequency sounding rocket contract missions. It has primary goals of
+  - Reaching the Karman Line
+  - Generating enough revenue to build Proto Liquid Fueled Launch Vehicles
+  - Pioneer scientific sample recovery
+
 ## Explorer Program
 The Explorer Program encompasses my prototyping efforts across vehicle GN&C, science-experiments, and data-driven planning. This branch will work across the three projects to explore basic ways to
   - Launch vehicles on sub-orbital trajectories in excess of 200km Apogee, 3000km downrange distance
