@@ -19,10 +19,12 @@ public:
     void addEngine(krpc::services::SpaceCenter::Engine);
     void addDecoupler(krpc::services::SpaceCenter::Decoupler);
     void addParachute(krpc::services::SpaceCenter::Parachute);
+    void addCamera(krpc::services::SpaceCenter::Part);
     void activateRCS();
     void deactivateRCS();
     void activateEngines();
     void shutdownEngines();
+    void setGimbals(double gimbal);
     void armParachutes();
     int engineFuelCheck();
 
@@ -60,6 +62,7 @@ void Stage::deactivateRCS() {
 
 void Stage::activateEngines() {
     for (auto eng : this->engines) {
+        std::cout << eng.part().title() << std::endl;
         eng.set_active(true);
     }
 }
@@ -67,6 +70,12 @@ void Stage::activateEngines() {
 void Stage::shutdownEngines() {
     for (auto eng : this->engines) {
         eng.set_active(false);
+    }
+}
+
+void Stage::setGimbals(double gimbal) {
+    for (auto eng : this->engines) {
+        eng.set_gimbal_limit(gimbal);
     }
 }
 
@@ -78,12 +87,14 @@ void Stage::armParachutes() {
 
 int Stage::engineFuelCheck() {
     for (auto eng : this->engines) {
-        for (auto engFuel : eng.propellants()) {
-            if ((engFuel.total_resource_available() / engFuel.total_resource_capacity() < 0.005)) {
-                return 2;
-            }
-            else if ((engFuel.total_resource_available() / engFuel.total_resource_capacity() < 0.05)) {
-                return 1;
+        if (eng.can_shutdown()) {
+            for (auto engFuel : eng.propellants()) {
+                if ((engFuel.total_resource_available() / engFuel.total_resource_capacity() < 0.005)) {
+                    return 2;
+                }
+                else if ((engFuel.total_resource_available() / engFuel.total_resource_capacity() < 0.05)) {
+                    return 1;
+                }
             }
         }
     }

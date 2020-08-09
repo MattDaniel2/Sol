@@ -24,6 +24,7 @@
     <ProjectGuid>{c28c0b50-637d-499e-8fa5-498bbdbb749c}</ProjectGuid>
     <RootNamespace>helloworld</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>krpc client</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -133,7 +134,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\asio-asio-1-12-branch\asio\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\mdani\source\repos\Sol\krpc_client\asio-asio-1-12-branch\asio\include;C:\Users\mdani\source\repos\Sol\krpc_client\protobuf-install\include;C:\Users\mdani\source\repos\Sol\krpc_client\krpc-install\include;C:\Users\mdani\source\repos\Sol\SpaceFlight\Fastball;C:\Users\mdani\source\repos\Sol\SpaceFlight\Music;C:\Users\mdani\source\repos\Sol\Data\Collection;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,7 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="hello_client.cpp" />
+    <ClCompile Include="client.cpp" />
     <ClCompile Include="krpc.pb.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

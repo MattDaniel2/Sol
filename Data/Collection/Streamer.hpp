@@ -90,7 +90,7 @@ private:
     Flight* srf_vel_flight;
 public:
     void init(krpc::services::SpaceCenter::Vessel&);
-    Interchange captureFrame();
+    DataFrame captureFrame();
 
 };
 
@@ -103,8 +103,8 @@ void Streamer::init(krpc::services::SpaceCenter::Vessel& vessel) {
     this->srf_vel_flight->init(*srf_vel_frame, vessel);
 };
 
-Interchange Streamer::captureFrame() {
-    Interchange frame;
+DataFrame Streamer::captureFrame() {
+    DataFrame frame;
     frame.position          = this->srf_vel_frame->pos_stream();
     frame.g_force           = this->srf_vel_flight->g_force();
     frame.mean_altitude     = this->srf_vel_flight->mean_altitude();
@@ -122,4 +122,5 @@ Interchange Streamer::captureFrame() {
     frame.sideslip_angle    = this->srf_vel_flight->aero->sideslip_angle();
 
     return frame;
+    //std::cout << "Dataset 0 :    " << this->srf_vel_flight->g_force() << "  " << this->srf_vel_flight->mean_altitude() << "  " << this->srf_vel_flight->pitch() << std::endl;
 }
